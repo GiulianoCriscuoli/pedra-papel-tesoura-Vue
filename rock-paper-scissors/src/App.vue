@@ -4,7 +4,10 @@
 	@mouseleave="resetPositions">
 		
 		<Header />
-		<RouterView />
+		<div class="view">
+			<RouterView />
+		</div>
+		
 	</div>
 </template>
 
@@ -55,7 +58,20 @@
 		display:flex;
 		flex-direction: column;
 		height: 100%;
+		min-height: 100vh;
 		font-family: 'Barlow Semi Condensed', Helvetica, Arial, sans-serif;
 		background: radial-gradient(circle at top, $background-from, $background-to);
+
+	.view {
+		display:flex;
+		justify-content: center;
+		align-items: center;
+		flex: 1;
+		width: 100%;
+		max-width: 800px;
+		margin: 0 auto;
+		padding: rfs(30px);
+	}
+
 	}
 </style>

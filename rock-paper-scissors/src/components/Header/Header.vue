@@ -55,7 +55,7 @@ padding: rfs(20px 30px);
 display: flex;
 flex-direction: column;
 line-height: 0.8em;
-color: $white;
+color: $scissors-to;
 font-size: 2rem;
 
 }
