@@ -2,15 +2,18 @@
     <div class="rules">
         <h1 class="title">RULES</h1>
         <img src="@/assets/image-rules-bonus.svg" alt="Game rules" class="image" />
-        <RouterLink to="/" class="back">
-        BACK
-        </RouterLink>
+        <BackButton />
     </div>
 </template>
 
 <script>
+import BackButton from '@/components/Buttons/Back.vue';
     export default{
         name: "Rules",
+        components: {
+            BackButton,
+
+        }
 
     };
 
@@ -24,24 +27,11 @@
         width: 100%;
         height: 100%;
 
-        .title,
-        .back {
-            color: $white;
-            letter-spacing: 2px;
+    .title {
+        color: $white;
+        letter-spacing: 2px;
 
         }
-
-        .back {
-            text-decoration: none;
-            font-size: rfs(1.25rem);
-        
-        &:hover,
-        &:focus {
-            outline: none;
-            text-decoration: underline;
-        }
-
-    }
 
     .image {
         width: 55%;
@@ -49,15 +39,7 @@
         @media (max-width: 768px) {
             width: 80%;
         }
-
     }
-
-    .image,
-    .back {
-
-        margin-top: rfs(50px);
-    }
-
 }
 
 </style>
