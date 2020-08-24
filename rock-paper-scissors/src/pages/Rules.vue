@@ -3,6 +3,7 @@
         <h1 class="title">RULES</h1>
         <img src="@/assets/image-rules-bonus.svg" alt="Game rules" class="image" />
         <BackButton />
+       
     </div>
 </template>
 

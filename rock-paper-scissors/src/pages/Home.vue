@@ -3,15 +3,17 @@
 		<RouterLink to="/play" class="start">
 			START GAME
 		</RouterLink>
-		<RouterLink to="/rules" class="rules">
-			RULES
-		</RouterLink>
+		 <RulesButton />
 	</div>
 </template>
 
 <script>
+	import RulesButton from '@/components/Buttons/Rules.vue';
 	export default {
 		name: 'Home',
+		components: {
+			RulesButton,
+		},
 	};
 </script>
 
